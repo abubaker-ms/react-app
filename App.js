@@ -1,5 +1,7 @@
-const heading=React.createElement("h1",{id:"heading"},"React first project");
-        const root=ReactDOM.createRoot(document.getElementById("root"));
-        root.render(heading);
+import React from "react";
+import ReactDOM  from "react-dom/client";
 
-        console.log(heading) // heading is a react object 
+const heading=React.createElement("h1",{id:"heading"},"React first project");
+const root=ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading);
+console.log(heading) // heading is a react object 

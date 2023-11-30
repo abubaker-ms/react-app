@@ -1,0 +1,32 @@
+{
+  "name": "react-zerotohero",
+  "version": "1.0.0",
+  "description": "This is react project",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abubaker-ms/react-app.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Abu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abubaker-ms/react-app/issues"
+  },
+  "homepage": "https://github.com/abubaker-ms/react-app#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browerslist":[
+    "last 2 versions"
+  ]
+}
