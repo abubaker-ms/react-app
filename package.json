@@ -5,7 +5,8 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "test": "jest"
+    "test": "jest",
+    "watch-test":"jest --watch"
   },
   "repository": {
     "type": "git",
@@ -21,13 +22,22 @@
   },
   "homepage": "https://github.com/abubaker-ms/react-app#readme",
   "devDependencies": {
+    "@babel/preset-react": "^7.24.7",
+    "@testing-library/dom": "^10.3.2",
+    "@testing-library/react": "^16.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "parcel": "^2.10.3",
     "postcss": "^8.4.32",
     "process": "^0.11.10",
     "tailwindcss": "^3.4.0"
   },
   "dependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
     "@reduxjs/toolkit": "^2.0.1",
+    "@testing-library/jest-dom": "^6.4.6",
+    "babel": "^6.23.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.0.4",

@@ -14,8 +14,8 @@ export default function Search({handleSearch,resData}) {
   }
   return (
     <div className='m-4 p-4 '>
-      <input className="border border-sloid border-black" type="text" value={inputValue} onChange={handleInputChange}/>
-      <button className='px-4 py-1 bg-green-100 m-2' onClick={handleSubmit}>Search</button>
+      <input className="border border-sloid border-black" type="text" data-testid="searchInput" value={inputValue} onChange={handleInputChange}/>
+      <button className='px-4 py-1 bg-green-100 m-2'  onClick={handleSubmit}>Search</button>
     </div>
   )
 }

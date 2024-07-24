@@ -7,7 +7,7 @@ import { useSelector } from "react-redux"
 
 const Header=()=>{
     const cartItems=useSelector((store)=>{
-        console.log(store.cart.items,"store")
+        // console.log(store.cart.items,"store")
         return store.cart.items;
     });
     const onlineStatus=useOnlineStatus()
@@ -41,7 +41,7 @@ const Header=()=>{
             <Link to="/aboutUs" className="items"> AboutUs</Link>
                 </li>
                 <li className="p-4">
-                <Link className="items">ContactUS</Link>
+                <Link className="items" to="/contactus">ContactUS</Link>
                 </li>
                 <li className="p-4">
                 <Link className="items" to="/grocery">Grocery</Link>
@@ -52,7 +52,7 @@ const Header=()=>{
             </li>
             
             <li className="p-4">
-            <Link className="items">Login {LoggedInUser} </Link>
+            <button className="items">Login {LoggedInUser} </button>
             </li>
            
             </ul>

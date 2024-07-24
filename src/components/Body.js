@@ -11,7 +11,7 @@ import UserContext from "../../utils/UserContext"
 const Body=()=>{
     const PromotedResturantCard=withPromotedLabel(ResturantConatiner)
     const onlineStatus=useOnlineStatus()
-    const navigate=useNavigate()
+    // const navigate=useNavigate()
     const [cardres,setcardres]=useState([])
     const [filterenbled,setfilter]=useState(false)
     const [buttonColour,setButtonColor]=useState('#DCDCD4')
@@ -50,7 +50,7 @@ const Body=()=>{
         const fetchData=async()=>{
             let data=await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.3667195&lng=78.4285084&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING');
             let json= await data.json();
-            console.log(json,"jsonn")
+            // console.log(json,"jsonn")
             let swiggycardres=json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
            
             swiggycardres.map((card)=>{
@@ -105,7 +105,7 @@ const Body=()=>{
     }
 
     const handleCardClick=()=>{
-        console.log(cardres)
+        // console.log(cardres)
         // navigate('https://www.swiggy.com/restaurants/dominos-pizza-agali-arcade-hampi-hospet-locality-hospet-371692')
     }
 
@@ -126,7 +126,7 @@ const Body=()=>{
         </div>
 
         <div className="">
-        <button className="p-2 mx-8 my-1 font-medium rounded-lg" onClick={filterTopResturant} style={{backgroundColor:buttonColour ,color:buttontTextColor}}>Top Rated Restaurant</button>
+        <button className="p-2 mx-8 my-1 font-medium rounded-lg" data-testid="topRatedres" onClick={filterTopResturant} style={{backgroundColor:buttonColour ,color:buttontTextColor}}>Top Rated Restaurant</button>
         {noTopres?<h1>No results</h1>:''}
         <label className="p-2 m-2 font-bold">SetUserName</label>
         <input className=' border border-black 1px solid' type="text" value={LoggedInUser} onChange={handleLoginChange}/>

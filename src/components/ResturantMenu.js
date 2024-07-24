@@ -8,14 +8,14 @@ const ResturantMenu =()=>{
 
     const menuDetials=useResturantMenu(params)
     const {resMenu,itemCards}=menuDetials
-  
+    // console.log(resMenu,"resMenuTable")
     return (
     // resMenu==null ? <Shimmer />:
-        <div className="text-center m-4">
+        <div  className="text-center m-4">
             {/* {console.log(resMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards,"ress")} */}
-            <h1 className="res-menu font-bold">ResturantMenu-{resMenu?.cards[0]?.card?.card?.info?.name}</h1>
-            <h3 className="font-medium">{resMenu?.cards[0]?.card?.card?.info?.locality}</h3>
-            <h2 className="font-medium">Delivery time - {resMenu?.cards[0]?.card?.card?.info?.sla?.deliveryTime} min -- {resMenu?.cards[0]?.card?.card?.info?.costForTwoMessage}</h2>
+            <h1 className="res-menu font-bold">ResturantMenu-{resMenu?.cards[2]?.card?.card?.info?.name}</h1>
+            <h3 className="font-medium">{resMenu?.cards[2]?.card?.card?.info?.locality}</h3>
+            <h2 className="font-medium">Delivery time - {resMenu?.cards[2]?.card?.card?.info?.sla?.deliveryTime} min -- {resMenu?.cards[2]?.card?.card?.info?.costForTwoMessage}</h2>
             
             
                 <ul>

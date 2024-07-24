@@ -12,7 +12,7 @@ const cartSlice=createSlice({
         removeItem:(state,action)=>{
           let removeitem=  state.items.map((item=>{
             // return item.info.id === action.payload.card.info.id
-            console.log(item.card,"itemactions")
+            // console.log(item.card,"itemactions")
           }))
           state.items.pop(removeitem)
         },

@@ -20,7 +20,7 @@ export const Cart=()=>{
    }
 
     return(
-        <div>
+        <div data-testid="cartPage">
             <div className="text-center m-4">
             <button onClick={handleClearbutton}>Clear Cart</button>
             </div>

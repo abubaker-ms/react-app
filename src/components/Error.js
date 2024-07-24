@@ -1,7 +1,7 @@
 import { useRouteError } from "react-router-dom"
 const Error=()=>(
         <div>
-            {console.log(useRouteError())}
+            {/* {console.log(useRouteError())} */}
             <h1>{useRouteError().data}</h1>
         </div> 
 )

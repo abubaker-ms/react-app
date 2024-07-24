@@ -46,7 +46,7 @@ const Body=()=>{
         const fetchData=async()=>{
             let data=await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.3667195&lng=78.4285084&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING');
             let json= await data.json();
-            console.log(json,"jsonn")
+            // console.log(json,"jsonn")
             let swiggycardres=json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
            
             swiggycardres.map((card)=>{
@@ -101,7 +101,7 @@ const Body=()=>{
     }
 
     const handleCardClick=()=>{
-        console.log(cardres)
+        // console.log(cardres)
         // navigate('https://www.swiggy.com/restaurants/dominos-pizza-agali-arcade-hampi-hospet-locality-hospet-371692')
     }
 

@@ -4,6 +4,7 @@ import Header from "./src/components/Header";
 import Body from "./src/components/Body";
 import AboutUs from "./src/components/AboutUs";
 import Error from "./src/components/Error";
+import ContactUS from './src/components/ContactUS'
 import ResturantMenu from "./src/components/ResturantMenu";
 import { BrowserRouter,RouterProvider, createBrowserRouter,Outlet } from "react-router-dom";
 import { ResturantConatiner } from "./src/components/RestuarntConatiner";
@@ -61,6 +62,10 @@ const appRouter=createBrowserRouter([
             {
                 path:"/cart",
                 element: <Cart />
+            },
+            {
+                path:"/contactus",
+                element: <ContactUS />
             }
         ]
     },
